@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5153"; // Puerto de tu backend
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export async function getUsuarios() {
     const response = await fetch(`${BASE_URL}/usuarios`);
