@@ -9,9 +9,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, onMounted } from 'vue'
-import { getUsuarios } from '../services/api'
+import { getUsuarios } from '../services/api.js'
 
 const usuarios = ref([])
 
